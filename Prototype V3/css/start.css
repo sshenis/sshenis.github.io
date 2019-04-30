@@ -1,0 +1,67 @@
+#app-main { 
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+}
+
+
+#logobox {
+  display:flex;
+  flex-direction: column;
+  position: fixed;
+  top: 0;
+  left: 0; 
+  width:100%;
+  text-align: center;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  margin-top:30%;
+}
+
+#logo {
+    width:50%;
+}
+
+h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 175px;
+    color: #57423d;
+    font-weight:600;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
+h2 {
+  font-size: 35pt;
+  font-family: Quicksand;
+  font-weight: 700;
+  color: #333333;
+  margin-top:10px;
+}
+
+#get-started {
+    font-family: Quicksand;
+    font-size: 40pt;
+    background-color: #8ad2c2;
+    color: white;
+    width: 60%;
+    height: 140px;
+    border-radius: 30px;
+    margin-top: 1em;
+}
+
+#view-tutorial {
+    font-family: Quicksand;
+    font-size: 40pt;
+    background-color: #94807e;
+    color: white;
+    width: 60%;
+    height: 130px;
+    border-radius: 30px;
+    margin-top: 30px;
+    
+}
+
+
+

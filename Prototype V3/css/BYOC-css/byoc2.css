@@ -1,0 +1,258 @@
+/* ---FONTS--- */
+ 
+#choose-flavour-text {
+  font-size: 55pt;
+  font-family: Quicksand;
+  font-weight: 700;
+  color: #333333;
+  text-align: center; 
+  margin: 10px, 0;   
+}
+
+.headfont {
+    margin-bottom:10px;
+}
+
+/*Blue Block under Header "Step 2"*/
+#block {
+    height:1%;
+    background-color:#BFE3DD;
+    margin-bottom:2em;
+    left:-100px;
+    position:relative;
+    top:0px;
+    width:350px;
+}
+
+/*//////////////////////////////////*/
+
+
+/*HIDE QUANTITY*/
+
+/* #Quantity_2 {
+    opacity:0;
+}
+
+#Quantity_1 {
+    
+}
+
+#Numbers {
+    opacity:0;
+} */
+
+
+/* DISPLAYING COOKIE SELECTIONS */
+
+#displayCookie {
+    top:0px;
+    position:relative;
+    margin-top:20px;
+    margin-left: -2%;
+}
+
+#vanilla {
+opacity:0;
+animation: float-cookie 3s infinite;
+-webkit-animation: float-cookie 3s infinite;
+animation-delay: 199ms;
+}
+
+#chocolate {
+    opacity:0;
+     animation: float-cookie 3s infinite;
+   -webkit-animation: float-cookie 3s infinite;
+}
+#shortbread {
+    opacity:0;
+    animation: float-cookie 3s infinite;
+-webkit-animation: float-cookie 3s infinite;
+}
+
+#shadow {
+    opacity:0;
+    animation: shadow-size 3s infinite;
+    transform-origin: center;
+        
+}
+
+/*ANIMATIONS: floating cookie*/
+@-webkit-keyframes float-cookie {
+    0% { transform: translateY(0); }
+    50% {transform: translateY(-30px);}
+    100% { transform: translateY(0px); }
+}
+@keyframes float-cookie {
+    0% { transform: translateY(0); }
+    50% {transform: translateY(-30px);}
+    100% { transform: translateY(0px); }
+}
+
+/*ANIMATIONS: shadow size*/
+@-webkit-keyframes shadow-size {
+    0% { transform: scaleX(0.4); }
+    50% { transform: scaleX(1); }
+    100% { transform: scaleX(0.4); }
+}
+@keyframes shadow-size {
+    0% { transform: scaleX(0.4); }
+    50% { transform: scaleX(1); }
+    100% { transform: scaleX(0.4); }
+}
+
+
+/*TOPPINGS: CHOCOLATE CHIPS, FRUIT, NUTS*/
+
+#chocolatechips {
+    opacity:0;
+    transition:0.3s;
+    animation: float-chip 3s infinite ;
+    animation-delay: 190ms;
+}
+#nuts {
+    opacity:0;
+    transition:0.3s;
+    animation: float-nut 3s infinite ;
+    animation-delay: 197ms;
+}
+#fruit {
+    opacity:0;
+    transition:0.3s;
+    animation:float-fruit 3s infinite;
+    animation-delay: 195ms;
+}
+
+/*TOPPING ANIMATION KEYFRAMES*/
+
+@-webkit-keyframes float-chip {
+    0% { transform: translateY(0); }
+    52% {transform: translateY(-30px);}
+    100% { transform: translateY(0px); }
+}
+
+@keyframes float-chip {
+    0% { transform: translateY(0); }
+    52% {transform: translateY(-30px);}
+    100% { transform: translateY(0px); }
+}
+
+
+@-webkit-keyframes float-nut {
+    0% { transform: translateY(0); }
+    47.5% {transform: translateY(-30px);}
+    100% { transform: translateY(0px); }
+}
+
+@keyframes float-nut {
+    0% { transform: translateY(0); }
+    50% {transform: translateY(-30px);}
+    100% { transform: translateY(0px); }
+}
+
+
+@-webkit-keyframes float-fruit {
+    0% { transform: translateY(0); }
+    50% {transform: translateY(-30px);}
+    100% { transform: translateY(0px); }
+}
+
+@keyframes float-fruit {
+    0% { transform: translateY(0); }
+    50% {transform: translateY(-30px);}
+    100% { transform: translateY(0px); }
+}
+
+
+/*////*/
+
+/* FLAVOUR OPTIONS: VANILLA, CHOCOLATE, SHORTBREAD */
+
+#flavours-container {
+    display:flex;
+    height:300px;
+    margin-top:3em;
+    margin-bottom:3em;
+    flex-direction: row;
+    padding-bottom: 40px;
+}
+
+.flavours {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+/*    background-color: pink;*/
+    height:350px;
+    width: 33.33%;
+    text-align:center;
+}
+
+.flavour-imgs {
+    width:300px;
+    margin-bottom: 20px;
+}
+
+.flavours span {
+    font-size: 50px;
+    font-family: Lato;
+    
+}
+
+
+
+/* BUTTONS */
+/* Start of next, prev and page nav */
+
+.next-prev {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 5em;
+}
+
+.byoc-buttons {
+    font-family: Quicksand;
+    font-size: 30pt;
+    height: 100%;
+    padding: 1px,7px,2px;
+    height:100px;
+}
+
+#byoc-prev {
+    background-color: #B3E5D9;
+    color: white;
+    flex: 2;
+    border-radius: 15px;
+}
+
+#space-between-button {
+    flex:1.5;
+    margin: 0px 50px;
+    width: 100%;
+    height: auto;
+    flex-direction: row;
+}
+
+#byoc-next {
+    background-color: #9BD1C3;
+    color: white;
+    flex: 2;
+    border-radius: 15px;
+}
+
+#byoc-next:hover {
+    background-color: #86C4B2;
+    cursor: pointer;
+}
+#byoc-prev:hover {
+    background-color: #9BD1C3;
+    cursor: pointer;
+}
+
+/* #choc-title {
+    
+} */
+
+
+

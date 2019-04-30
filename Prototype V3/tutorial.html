@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link href="css/skeleton.css" rel="stylesheet" type="text/css" />
+  <link href="css/tutorial.css" rel="stylesheet" type="text/css" />
+  <title>Tutorial | Cooki</title>
+</head>
+
+<body>
+  <div id="app">
+
+
+    <div id="topmenu">
+      <div class="cooki-header">
+
+        <div class="menu-button" onclick="openMenu()">
+
+          <img src="imgs/icons/hamburgerMenu.svg" id="hamburgerMenu" alt="hamburger menu">
+          <img src="imgs/icons/xMenu.svg" id="xMenu" alt="hamburger menu">
+
+        </div>
+
+        <div class="cooki-name" onclick="location.href='index.html'">
+          <h1>cooki.</h1>
+        </div>
+
+
+      </div>
+
+      <div id="pulloutMenu">
+
+        <!--      Menu item in a List: home, tutorial, byoc and recipes-->
+
+        <ul>
+          <div class="menulines">
+            <div id="home-container" onclick="location.href='index.html'">
+              <img src="imgs/icons/home-icon.svg" class="list-icons" alt="chocolate icon">
+              <li>Home</li>
+            </div>
+          </div>
+
+
+          <div class="menulines">
+            <div id="tutorial-container" onclick="location.href='tutorial.html'">
+              <img src="imgs/icons/tutorial-icon.svg" class="list-icons" alt="chocolate icon" id="tutorialicon">
+              <li>Tutorial</li>
+            </div>
+          </div>
+
+
+          <div class="menulines">
+            <div id="byoc-container" onclick="location.href='byoc.html'">
+              <img src="imgs/icons/byoc-icon.svg" class="list-icons" alt="chocolate icon">
+              <li>Build Your Own Cookie</li>
+            </div>
+          </div>
+
+
+          <div id="recipe-container" onclick="dropMenu()" class="dropbtn">
+            <img src="imgs/icons/recipes-icon.svg" class="list-icons" alt="chocolate icon">
+            <li class="dropdown">Recipes<span class="add">+</span>
+
+
+              <div class="dropdown-recipes">
+
+                <div class="drop dropcolor" onclick="location.href='viewall-section.html'">
+                  <img src="imgs/icons/viewall-icon.svg" class="drop-icons" alt="view all icon">
+                  <p>View All</p>
+                </div>
+
+
+                <div class="drop" onclick="location.href='vanilla-section.html'">
+                  <img src="imgs/icons/vanilla-bean-icon.svg" class="drop-icons" alt="Vanilla icon">
+                  <p>Vanilla</p>
+                </div>
+
+                <div class="drop dropcolor" onclick="location.href='chocolate-section.html'">
+                  <img src="imgs/icons/chocolate-icon.svg" class="drop-icons" alt="chocolate icon">
+                  <p>Chocolate</p>
+                </div>
+
+                <div class="drop" onclick="location.href='shortbread-section.html'">
+                  <img src="imgs/icons/shortbread-icon.svg" class="drop-icons" alt="shortbread icon">
+                  <p>Shortbread</p>
+                </div>
+
+              </div>
+
+
+            </li>
+
+
+          </div>
+
+        </ul>
+
+      </div>
+
+    </div>
+  </div>r
+  <div class="app-container">
+
+    <div class="app-main">
+      <div id="what-is-cooki">
+          <div class="tutorial-container">
+              <!--Header-->
+              <div class="tutorial-header">
+                <h4>Building Your Cookie</h4>
+              </div>
+              <!--Block-->
+              <div class="tutorial-block"></div>
+            </div>
+        <!--Title + Video-->
+        <div class="tutorial-display">
+          <div class="display">
+            <video autoplay="autoplay" muted>
+              <source src="imgs/tutorial/final-logo.mp4" type="video/mp4">
+            </video>
+          </div>
+
+          <!--Decorative green block-->
+          <div class="block">
+          </div>
+
+          <!--Content-->
+          <div class="tutorial-content">
+            <p>
+              Cooki is an interactive Desktop/Phone Web Application created by D3 students: Shenis Macabenta, Irvin
+              Alcira, and Naomi Okada from British Columbia institute of Technology.
+            </p>
+            <p>
+              Cooki’s main purpose is to help users create their “perfect” cookie in a convenient and fun way.
+            </p>
+            <p>
+              Users also have Cooki’s wide variety of recipies to look at at their disposal.
+            </p>
+          </div>
+        </div>
+      </div>
+      <!--What is cooki-->
+
+      <div id="tutstep1">
+        <!--Top section-->
+        <div class="tutorial-content">
+          <div class="tutorial-container">
+            <!--Header-->
+            <div class="tutorial-header">
+              <h4>Building Your Cookie</h4>
+            </div>
+            <!--Block-->
+            <div class="tutorial-block"></div>
+          </div>
+          <!--Paragraph-->
+          <div class="tutorial-instructions">
+            <p>
+              Access our Build your own cookie feature through the Home page. Then, choose your desired flavour
+              and press Next.
+            </p>
+          </div>
+        </div>
+
+        <!--Video-->
+        <div class="tutorial-video">
+          <video autoplay="autoplay" loop muted>
+            <source src="imgs/tutorial/step1.mp4" type="video/mp4">
+          </video>
+        </div>
+      </div>
+
+
+      <div id="tutstep2">
+        <!--Top section-->
+        <div class="tutorial-content">
+          <div class="tutorial-container">
+            <!--Header-->
+            <div class="tutorial-header">
+              <h4>Building Your Cookie</h4>
+            </div>
+            <!--Block-->
+            <div class="tutorial-block"></div>
+          </div>
+          <!--Paragraph-->
+          <div class="tutorial-instructions">
+            <p>
+              Select your toppings and press "Next". You may also go back and change your choice of flavour
+              by pressing previous!</p>
+          </div>
+        </div>
+
+        <!--Video-->
+        <div class="tutorial-video">
+          <video autoplay="autoplay" loop muted>
+            <source src="imgs/tutorial/step2.mp4" type="video/mp4">
+          </video>
+        </div>
+      </div>
+
+      <div id="tutstep3">
+        <!--Top section-->
+        <div class="tutorial-content">
+          <div class="tutorial-container">
+            <!--Header-->
+            <div class="tutorial-header">
+              <h4>Building Your Cookie</h4>
+            </div>
+            <!--Block-->
+            <div class="tutorial-block"></div>
+          </div>
+          <!--Paragraph-->
+          <div class="tutorial-instructions">
+            <p>
+              Choose the quantity you want your recipe to yield and press Generate.
+              We will then
+              take a few seconds to generate you the perfect recipe!</p>
+          </div>
+        </div>
+
+        <!--Video-->
+        <div class="tutorial-video">
+          <video autoplay="autoplay" loop muted>
+            <source src="imgs/tutorial/step3.mp4" type="video/mp4">
+          </video>
+        </div>
+      </div>
+
+      <!--Buttons-->
+      <div class="tutorial-controls">
+        <div class="next-prev">
+          <button class="tut-prev" id="start-prev" onclick="location.href='index.html'">Home</button>
+          <button class="tut-prev" onclick="PrevStep()">Previous</button>
+          <div class="page-nav">
+            <div id="page-circ1" class="circle-cont circles"></div>
+            <div id="page-circ2" class="circle-cont circles"></div>
+            <div id="page-circ3" class="circle-cont circles"></div>
+            <div id="page-circ4" class="circle-cont circles"></div>
+          </div>
+          <button class="tut-next" onclick="NextStep()">Next</button>
+          <button class="tut-next" id="lets-bake" onclick="NextStep()">Get Started</button>
+        </div>
+      </div>
+
+
+
+
+    </div>
+  </div>
+  <script src="js/tutorial.js"></script>
+  <script src="js/index.js"></script>
+</body>
+
+
+</html>

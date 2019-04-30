@@ -1,0 +1,252 @@
+@import url('https://fonts.googleapis.com/css?family=Lato|Quicksand:400,500');
+
+/* li {
+    font-family: Lato, sans-serif;
+} */
+
+/* Cooki of the day */
+/* .container {
+    margin-top: -50px;
+  } */
+
+  .recipe-info h3 {
+    font-size: 50px;
+    font-family: Quicksand;
+  }
+  
+  /* .block {
+    margin-top: 30px;
+    background-color: #BFE3DD;
+    height: 1vh;
+    width: 100%;
+  } */
+
+  .recipe-info p {
+    margin-top: -30px;
+    font-family: Lato;
+    font-size: 35px;
+    text-align: justify;
+  }
+/*   
+  #varb {
+      margin-bottom: 0px;
+  } */
+
+  .readmore {
+    color: grey;
+    text-decoration: underline;
+  }
+  
+  .recipe-img {
+    border-radius: 30px;
+  }
+
+  /* var */
+  /* .var-recipe-container {
+      margin-top: -30px;
+  }
+  
+
+
+.home-cotd {
+    display:flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+} */
+
+/* .cotd-display {
+    font-family: Quicksand;
+} */
+
+/* .cotd-img {
+    margin-top: -50px;
+}
+.cotd-img img {
+    border-radius: 30px;
+}
+
+.cotd-chosen {
+    font-size: 45px;
+    font-weight: bold;
+    margin: -0px 0px;
+}
+
+.cotd-chosen p {
+    text-align: justify;
+    font-family: Lato;
+    font-size: 35px;
+    margin-top: -30px;
+} */
+
+/* .cotd-chosen a {
+    color: grey;
+} */
+
+.container {
+    margin-top: -50px;
+}
+
+.info {
+    display: flex;
+
+}
+
+.cotd-block {
+    background-color: #BFE3DD;
+    width: 100%;
+    height: auto;
+    margin: 107px 0px;
+    flex: 0.75;
+}
+
+.cotd-feature-title {
+    flex: 1;
+    font-family: Lato;
+    font-size: 50px;
+    font-weight: 400;
+    margin: 20px 0px;
+}
+.byoc-feature-title {
+    flex: 1;
+    font-family: Lato;
+    font-size: 50px;
+    font-weight: 400;
+    margin: 50px 0px;
+}
+.byoc-block {
+    background-color: #BFE3DD;
+    width: 100%;
+    height: auto;
+    margin: 137px 0px;
+    flex: 0.35;
+}
+
+
+/* BYOC */
+
+.home-byoc {
+    margin: 0px 0px 150px;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    flex-direction: column;
+}
+
+.home-byoc video {
+    width: 100%;
+    height: 100%;
+    border-radius: 30px;
+}
+
+#byoc-but {
+    font: 55px Quicksand;
+    text-align: center;
+    color: white;
+    background-color: #94807e;
+    padding: 35px;
+    border-radius: 30px;
+    margin: 50px 0px;
+}
+
+
+
+
+/* View ALl Recipes */
+/* .home-var {
+    background-color: #f8f8f9;
+    width: 100%;
+}
+
+.var-controls {
+    left: 0;
+}
+
+.buttons {
+    margin-top: -350px;
+}
+.var-info {
+    display: flex;
+    font-family: Quicksand;
+    margin-top: -20px;
+}
+
+.var-but {
+    font-family: Quicksand;
+    font-size: 50px;
+    color: white;
+    width: 100%;
+    background-color: #aad1d0;
+    margin-top: 25px;
+    margin-bottom: 40px;
+    padding: 20px;
+    border-radius: 30px;
+} */
+/* .var-block {
+    background-color: #BFE3DD;
+    width: 100%;
+    height: auto;
+    margin: 107px 0px;
+    flex: 0.75;
+}
+
+.var-feature-title {
+    flex: 0.6;
+    font-family: Lato;
+    font-size: 50px;
+    font-weight: 400;
+    margin: 20px 0px;
+}
+
+.var-display-container {
+    max-width: 100%;
+    margin-top: -50px;
+}
+
+.var-content {
+    position: relative;
+}
+
+.varSlides {
+    border-radius: 30px;
+} */
+
+
+/* .var-size {
+    position: absolute;
+    font-size: 30px;
+    color: #BFE3DD;
+    margin-top: -300px;
+    text-shadow: 1px 1px 3px #252525;
+}
+
+.var-left {
+    float: left;
+    font-size: 100px;
+    padding: 0px 15px;
+}
+
+.var-right {
+    float: right;
+    font-size: 100px;
+    padding: 0px 15px;
+}
+
+.var-chosen {
+    font-family: Quicksand;
+    font-size: 40px;
+    font-weight: bold;
+    margin: -0px 0px;
+}
+
+.var-chosen p {
+    font-family: Lato;
+    font-size: 35px;
+    margin-top: -30px;
+    text-align: justify;
+}
+
+.var-chosen a {
+    color: grey;
+} */

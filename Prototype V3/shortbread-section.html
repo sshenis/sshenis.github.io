@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link href="css/skeleton.css" rel="stylesheet" type="text/css" />
+  <link href="css/flavour.css" rel="stylesheet" type="text/css" />
+
+  <title>Shortbread | Cooki</title>
+</head>
+
+<body onload="loadEverything()">
+
+
+
+  <div id="app">
+
+
+    <div id="topmenu">
+      <div class="cooki-header">
+
+        <div class="menu-button" onclick="openMenu()">
+
+          <img src="imgs/icons/hamburgerMenu.svg" id="hamburgerMenu" alt="hamburger menu">
+          <img src="imgs/icons/xMenu.svg" id="xMenu" alt="hamburger menu">
+
+        </div>
+
+        <div class="cooki-name" onclick="location.href='index.html'">
+          <h1>cooki.</h1>
+        </div>
+
+
+      </div>
+
+      <div id="pulloutMenu">
+
+        <!--      Menu item in a List: home, tutorial, byoc and recipes-->
+
+        <ul>
+          <div class="menulines">
+            <div id="home-container" onclick="location.href='index.html'">
+              <img src="imgs/icons/home-icon.svg" class="list-icons" alt="chocolate icon">
+              <li>Home</li>
+            </div>
+          </div>
+
+
+          <div class="menulines">
+            <div id="tutorial-container" onclick="location.href='tutorial.html'">
+              <img src="imgs/icons/tutorial-icon.svg" class="list-icons" alt="chocolate icon" id="tutorialicon">
+              <li>Tutorial</li>
+            </div>
+          </div>
+
+
+          <div class="menulines">
+            <div id="byoc-container" onclick="location.href='byoc.html'">
+              <img src="imgs/icons/byoc-icon.svg" class="list-icons" alt="chocolate icon">
+              <li>Build Your Own Cookie</li>
+            </div>
+          </div>
+
+
+          <div id="recipe-container" onclick="dropMenu()" class="dropbtn">
+            <img src="imgs/icons/recipes-icon.svg" class="list-icons" alt="chocolate icon">
+            <li class="dropdown">Recipes<span class="add">+</span>
+
+
+              <div class="dropdown-recipes">
+
+                <div class="drop dropcolor" onclick="location.href='viewall-section.html'">
+                  <img src="imgs/icons/viewall-icon.svg" class="drop-icons" alt="view all icon">
+                  <p>View All</p>
+                </div>
+
+
+                <div class="drop" onclick="location.href='vanilla-section.html'">
+                  <img src="imgs/icons/vanilla-bean-icon.svg" class="drop-icons" alt="Vanilla icon">
+                  <p>Vanilla</p>
+                </div>
+
+                <div class="drop dropcolor" onclick="location.href='chocolate-section.html'">
+                  <img src="imgs/icons/chocolate-icon.svg" class="drop-icons" alt="chocolate icon">
+                  <p>Chocolate</p>
+                </div>
+
+                <div class="drop" onclick="location.href='shortbread-section.html'">
+                  <img src="imgs/icons/shortbread-icon.svg" class="drop-icons" alt="shortbread icon">
+                  <p>Shortbread</p>
+                </div>
+
+              </div>
+
+
+            </li>
+
+
+          </div>
+
+        </ul>
+
+      </div>
+
+    </div>
+    <div class="back-button-box">
+
+        <div class="flavour-button-categories">
+  
+          <div class="flavour-backbutton back-text" onclick="backtocat()">
+            <div class="arrow">&#8249;</div> 
+            <div class="flavour-label">Categories</div>
+          </div>
+  
+        </div>
+  
+      </div>
+    <!--End back-button-box-->
+
+  </div>
+
+  <div class="firstpg">
+
+    <div class="app-container">
+
+      <div class="app-main hidethis">
+
+        <!--Back Button-->
+
+        <!--
+          <div class="back-button-box">
+            <a onclick="returnCategories()"> <strong>&lt;</strong> Categories</a>
+          </div>
+-->
+
+
+        <!--Start of title-->
+
+        <div class="category-title">
+          <h1>Shortbread</h1>
+          <div class="category-block"></div>
+        </div>
+
+        <!--End of title-->
+
+
+        <!--Start of recipes-->
+
+
+        <!-- RECIPE ONE -->
+        <div class="recipe-container" onclick="recipe1()">
+
+          <div class="recipe-display0">
+            <img src="imgs/recipes/chocolate/default/preview-img.png" alt="image" />
+          </div>
+
+          <div class="recipe-info">
+              <h3 class="title0">Cookie Title</h3>
+  
+              <p> <span class="recipe0">Cooke descripition goes here...</span></p>
+              <div class="read-more-right">
+                <span class="readmore read0">READ MORE &#187;</span>
+              </div>
+  
+              <div class="block"></div>
+            </div>
+
+        </div>
+
+
+        <!-- RECIPE TWO -->
+        <div class="recipe-container" onclick="recipe2()">
+
+          <div class="recipe-display1">
+            <img src="imgs/recipes/chocolate/default/preview-img.png" alt="image" />
+          </div>
+
+          <div class="recipe-info">
+              <h3 class="title1">Cookie Title</h3>
+  
+              <p> <span class="recipe1">Cooke descripition goes here...</span></p>
+              <div class="read-more-right">
+                <span class="readmore read0">READ MORE &#187;</span>
+              </div>
+  
+              <div class="block"></div>
+            </div>
+            
+        </div>
+
+
+        <!-- RECIPE THREE -->
+        <div class="recipe-container" onclick="recipe3()">
+
+          <div class="recipe-display2">
+            <img src="imgs/recipes/chocolate/default/preview-img.png" alt="image" />
+          </div>
+
+          <div class="recipe-info">
+              <h3 class="title2">Cookie Title</h3>
+  
+              <p> <span class="recipe2">Cooke descripition goes here...</span></p>
+              <div class="read-more-right">
+                <span class="readmore read0">READ MORE &#187;</span>
+              </div>
+  
+              <div class="block"></div>
+            </div>
+            
+        </div>
+
+        <!-- RECIPE FOUR -->
+        <div class="recipe-container" onclick="recipe4()">
+
+          <div class="recipe-display3">
+            <img src="imgs/recipes/chocolate/default/preview-img.png" alt="image" />
+          </div>
+
+          <div class="recipe-info">
+              <h3 class="title3">Cookie Title</h3>
+  
+              <p> <span class="recipe3">Cooke descripition goes here...</span></p>
+              <div class="read-more-right">
+                <span class="readmore read0">READ MORE &#187;</span>
+              </div>
+  
+              <div class="block"></div>
+            </div>
+            
+        </div>
+
+
+        <!-- RECIPE FIVE -->
+        <div class="recipe-container" onclick="recipe5()">
+
+          <div class="recipe-display4">
+            <img src="imgs/recipes/chocolate/default/preview-img.png" alt="image" />
+          </div>
+
+          <div class="recipe-info">
+              <h3 class="title4">Cookie Title</h3>
+  
+              <p> <span class="recipe4">Cooke descripition goes here...</span></p>
+              <div class="read-more-right">
+                <span class="readmore read0">READ MORE &#187;</span>
+              </div>
+  
+              <div class="block"></div>
+            </div>
+            
+        </div>
+
+
+
+        <!-- RECIPE SIX -->
+        <div class="recipe-container" onclick="recipe6()">
+
+          <div class="recipe-display5">
+            <img src="imgs/recipes/chocolate/default/preview-img.png" alt="image" />
+          </div>
+
+          <div class="recipe-info">
+              <h3 class="title5">Cookie Title</h3>
+  
+              <p> <span class="recipe5">Cooke descripition goes here...</span></p>
+              <div class="read-more-right">
+                <span class="readmore read0">READ MORE &#187;</span>
+              </div>
+  
+              <div class="block"></div>
+            </div>
+            
+        </div>
+
+
+        <!-- RECIPE SEVEN -->
+        <div class="recipe-container" onclick="recipe7()">
+
+          <div class="recipe-display6">
+            <img src="imgs/recipes/chocolate/default/preview-img.png" alt="image" />
+          </div>
+
+          <div class="recipe-info">
+              <h3 class="title6">Cookie Title</h3>
+  
+              <p> <span class="recipe6">Cooke descripition goes here...</span></p>
+              <div class="read-more-right">
+                <span class="readmore read0">READ MORE &#187;</span>
+              </div>
+  
+              <div class="block"></div>
+            </div>
+            
+        </div>
+
+
+        <!-- RECIPE EIGHT -->
+        <div class="recipe-container" onclick="recipe8()">
+
+          <div class="recipe-display7">
+            <img src="imgs/recipes/chocolate/default/preview-img.png" alt="image" />
+          </div>
+
+          <div class="recipe-info">
+              <h3 class="title7">Cookie Title</h3>
+  
+              <p> <span class="recipe7">Cooke descripition goes here...</span></p>
+              <div class="read-more-right">
+                <span class="readmore read0">READ MORE &#187;</span>
+              </div>
+  
+              <div class="block"></div>
+            </div>
+            
+        </div>
+
+
+
+      </div>
+
+    </div>
+
+
+  </div>
+
+  <div class="secondpg">
+
+    <div class="app-container">
+
+      <div class="app-main">
+        <!--
+          <div class="back-button-box">
+            <a onclick="returntoCategories()"> <strong>&lt;</strong> Chocolate</a>
+          </div>
+-->
+
+        <div class="main-recipe-image-box">
+          <img src="imgs/recipes/chocolate/default/head-img.png">
+        </div>
+
+        <div class="recipe-name-box">
+          <span class="title">Cookie Title</span>
+        </div>
+
+        <div class="prepinfo-container">
+          <div class="prepinfo-box preptext">
+
+            <div class="prepsection">
+              <img src="imgs/icons/timer-icon.svg" class="prepicon" alt="prep timer icon">
+              <span class="prep-info-text">Prep: <span class="prep-time">_ Mins</span>
+              </span>
+            </div>
+            <div class="prepsection">
+              <img src="imgs/icons/timer-icon.svg" class="prepicon" alt="prep timer icon">
+              <span class="prep-info-text">Cook: <span class="cook-time">_ Mins</span></span>
+            </div>
+            <div class="prepsection">
+              <img src="imgs/icons/yield-icon.svg" class="prepicon" alt="prep timer icon">
+              <span class="prep-info-text">Yield: <span class="yield-time">_ Cookies</span></span>
+            </div>
+
+          </div>
+        </div>
+
+
+        <div class="ing-ins-box">
+
+          <div class="ing-ins-title">
+            <img src="imgs/icons/circle-icon.svg" alt="circle" class="icon" />
+            <span class="header1">Ingredients</span>
+          </div>
+
+          <div class="ing-ins-section">
+            <ul class="ingredients-info">
+            </ul>
+          </div>
+
+        </div>
+
+
+        <div class="side-img-box">
+          <img src="imgs/recipes/chocolate/default/side-img.png">
+        </div>
+
+
+        <div class="ing-ins-box">
+          <div class="ing-ins-title">
+            <img src="imgs/icons/circle-icon.svg" alt="circle" class="icon" />
+            <span class="header1">Instructions</span>
+          </div>
+
+          <div class="ing-ins-section">
+
+            <ol class="instructions-info">
+            </ol>
+
+          </div>
+        </div>
+
+
+        <div class="footer-img-box">
+          <img src="imgs/recipes/chocolate/default/footer-img.png">
+        </div>
+
+
+        <div class="notes-box">
+          <span> </span>
+        </div>
+
+
+      </div>
+    </div>
+
+  </div>
+
+
+
+
+
+  <script src="js/flavours/shortbreadrecipes.js"></script>
+  <script src="js/index.js"></script>
+</body>
+
+
+</html>

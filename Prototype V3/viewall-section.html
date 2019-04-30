@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<!--  <link href="css/skeleton.css" rel="stylesheet" type="text/css" />-->
+  <link href="css/viewall-section.css" rel="stylesheet" type="text/css" />
+  <title>Cooki</title>
+</head>
+
+<body>
+  <div id="app">
+      
+<!--    COOKI logo and Hamburger Menu -->
+      
+      <div id="topmenu">
+        <div class="cooki-header">
+        
+      <div class="menu-button" onclick="openMenu()">
+          
+      <img src="imgs/icons/hamburgerMenu.svg" id="hamburgerMenu" alt="hamburger menu">
+      <img src="imgs/icons/xMenu.svg" id="xMenu" alt="hamburger menu"> 
+          
+      </div>
+
+      <div class="cooki-name" onclick="location.href='index.html'" >
+        <h1>cooki.</h1>
+      </div>
+        
+        
+      </div>
+          
+        <div id="pulloutMenu"> 
+          
+<!--      Menu item in a List: home, tutorial, byoc and recipes-->
+        
+        <ul>
+          <div class="menulines">
+              <div id="home-container" onclick="location.href='index.html'">
+              <img src="imgs/icons/home-icon.svg" class="list-icons" alt="chocolate icon">
+              <li>Home</li>
+              </div>
+          </div>   
+          
+          
+          <div class="menulines">
+              <div id="tutorial-container" onclick="location.href='tutorial.html'">
+              <img src="imgs/icons/tutorial-icon.svg" class="list-icons" alt="chocolate icon" id="tutorialicon">
+            <li>Tutorial</li>
+              </div>
+          </div>  
+          
+          
+          <div class="menulines">
+            <div id="byoc-container" onclick="location.href='byoc.html'">
+            <img src="imgs/icons/byoc-icon.svg" class="list-icons" alt="chocolate icon">
+            <li>Build Your Own Cookie</li> 
+          </div>
+          </div>
+          
+          
+          <div id="recipe-container" onclick="dropMenu()" class="dropbtn">
+          <img src="imgs/icons/recipes-icon.svg" class="list-icons" alt="chocolate icon">
+           <li class="dropdown">Recipes<span class="add">+</span>
+               
+               
+             <div class="dropdown-recipes">
+                 
+               <div class="drop dropcolor" onclick="location.href='viewall-section.html'">
+                   <img src="imgs/icons/viewall-icon.svg" class="drop-icons" alt="view all icon">
+                   <p>View All</p>
+               </div>
+                 
+                   
+               <div class="drop" onclick="location.href='vanilla-section.html'">
+                   <img src="imgs/icons/vanilla-bean-icon.svg" class="drop-icons" alt="Vanilla icon">
+                   <p>Vanilla</p>
+               </div>
+                 
+                  <div class="drop dropcolor" onclick="location.href='chocolate-section.html'">
+                   <img src="imgs/icons/chocolate-icon.svg" class="drop-icons" alt="chocolate icon">
+                   <p>Chocolate</p>
+               </div>
+                 
+                  <div class="drop" onclick="location.href='shortbread-section.html'">
+                   <img src="imgs/icons/shortbread-icon.svg" class="drop-icons" alt="shortbread icon">
+                   <p>Shortbread</p>
+               </div>
+                 
+<!--
+                  <div class="drop dropcolor">
+                   <img src="imgs/icons/fruuit-nut-icon.svg" class="drop-icons" alt="fruit and nut icon">
+                   <p>Fruit & Nuts</p>
+                  </div>
+                 
+                 <div class="drop">
+                   <img src="imgs/icons/nobake-icon.svg" class="drop-icons" alt="no bake icon">
+                   <p>No Bake</p>
+                  </div>
+-->
+                 
+             </div>  
+               
+               
+             </li>
+              
+              
+          </div> 
+          
+      </ul>
+      
+      </div>
+          
+      </div>
+          
+    </div>
+
+      
+    <div class="app-container">
+        
+      <div class="app-main">
+          
+          <div id="All-recipe-container">
+              
+              
+<!--  View All Recipes Recipe Section  -->
+              
+            <div class="recipesection section-color2">
+                <div class="section" onclick="location.href='index.html'">
+                <img src="imgs/icons/home-icon.svg" class="icons" alt="Home icon">
+                <h2 class="category-label">Home</h2>
+                </div>
+           </div>
+              
+              
+              
+<!--  View Vanilla Recipe Section  -->
+              
+            <div class="recipesection section-color1">
+                <div class="section" onclick="location.href='vanilla-section.html'">
+                <img src="imgs/icons/vanilla-bean-icon.svg" class="icons" alt="view all icon">
+                <h2 class="category-label">Vanilla</h2>
+                </div>
+           </div>
+              
+              
+              
+    <!--  View Chocolate Recipe Section  -->
+              
+            <div class="recipesection section-color2">
+                <div class="section" onclick="location.href='chocolate-section.html'">
+                <img src="imgs/icons/chocolate-icon.svg" class="icons" alt="view all icon">
+                <h2 class="category-label">Chocolate</h2>
+                </div>
+           </div>
+              
+              
+              
+    <!--  View Shortbread Recipe Section  -->
+              
+            <div class="recipesection section-color1" >
+                <div class="section" onclick="location.href='shortbread-section.html'">
+                <img src="imgs/icons/shortbread-icon.svg" class="icons" alt="shortbread icon">
+                <h2 class="category-label">Shortbread</h2>
+                </div>
+           </div>
+                                          
+              
+              
+      <!--  View Fruit and Nut Recipe Section  -->    
+              
+            <div class="recipesection section-color2" >
+                <div class="section" onclick="Unavailable()">
+                <img src="imgs/icons/fruuit-nut-icon.svg" class="icons" alt="fruit and nut icon">
+                <h2 class="category-label">Fruit & Nuts</h2>
+                </div>
+           </div>                                                         
+              
+              
+    <!--  View No Bake Section  -->
+            <div class="recipesection section-color1">
+                <div class="section" onclick="Unavailable()">
+                <img src="imgs/icons/nobake-icon.svg" class="icons" alt="nobake icon">
+                <h2 class="category-label">No Bake</h2>
+                </div>
+           </div>
+              
+              
+              
+              
+        </div>
+                                                                                     
+     
+        <!--End of All Recipes-->
+
+      </div>
+    </div>
+
+  <script src="js/index.js"></script>
+</body>
+
+
+</html>

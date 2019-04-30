@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link href="css/skeleton-test2.css" rel="stylesheet" type="text/css" />
+  <link href="css/generated-recipe.css" rel="stylesheet" type="text/css" />
+  <link href="css/back-to-top-test.css" rel="stylesheet" type="text/css" />
+  
+  <title>Generated Recipe | Cooki</title>
+</head>
+
+<body onload="loadEverything()">
+    
+  <!--    SCROLL TO TOP: TOP    -->
+        <div id="top-of-page"></div>
+
+
+<!--     SCROLL TO TOP  -->
+                <div class="scrolltoTop">
+                    <a href="#top-of-page"><img id="top" src="imgs/icons/top.svg" alt="Scroll To Top"></a>
+                </div>
+    
+<!-- end of scroll to top -->
+
+  
+  <div id="app">
+
+
+    <div id="topmenu">
+          <div class="cooki-header">
+    
+            <div class="menu-button" onclick="openMenu()">
+    
+              <img src="imgs/icons/hamburgerMenu.svg" id="hamburgerMenu" alt="hamburger menu">
+              <img src="imgs/icons/xMenu.svg" id="xMenu" alt="hamburger menu">
+    
+            </div>
+    
+            <div class="cooki-name" onclick="location.href='index.html'">
+              <h1>cooki.</h1>
+            </div>
+    
+    
+          </div>
+    
+          <div id="pulloutMenu">
+    
+            <!--      Menu item in a List: home, tutorial, byoc and recipes-->
+    
+            <div class="entiremenu">
+              <div class="menulines">
+                <div id="home-container" onclick="location.href='index.html'">
+                  <img src="imgs/icons/home-icon.svg" class="list-icons" alt="chocolate icon">
+                  <div class="name">Home</div>
+                </div>
+              </div>
+    
+    
+              <div class="menulines">
+                <div id="tutorial-container" onclick="location.href='tutorial.html'">
+                  <img src="imgs/icons/tutorial-icon.svg" class="list-icons" alt="chocolate icon"
+                    id="tutorialicon">
+                  <div class="name">Tutorial</div>
+                </div>
+              </div>
+    
+    
+              <div class="menulines">
+                <div id="byoc-container" onclick="location.href='byoc.html'">
+                  <img src="imgs/icons/byoc-icon.svg" class="list-icons" alt="chocolate icon">
+                  <div class="name">Build Your Own Cookie</div>
+                </div>
+              </div>
+    
+    
+              <div id="recipe-container" onclick="dropMenu()" class="dropbtn">
+                <img src="imgs/icons/recipes-icon.svg" class="list-icons" alt="chocolate icon">
+                <div class="name recipesheight">Recipes<span class="add">+</span>
+                  
+                  
+    
+                  <div class="dropdown-recipes">
+    
+                    <div class="drop dropcolor" onclick="location.href='viewall-section.html'">
+                      <img src="imgs/icons/viewall-icon.svg" class="drop-icons" alt="view all icon">
+                      <p>View More Categories</p>
+                    </div>
+    
+    
+                    <div class="drop" onclick="location.href='vanilla-section.html'">
+                      <img src="imgs/icons/vanilla-bean-icon.svg" class="drop-icons" alt="Vanilla icon">
+                      <p>Vanilla</p>
+                    </div>
+    
+                    <div class="drop dropcolor" onclick="location.href='chocolate-section.html'">
+                      <img src="imgs/icons/chocolate-icon.svg" class="drop-icons" alt="chocolate icon">
+                      <p>Chocolate</p>
+                    </div>
+    
+                    <div class="drop" onclick="location.href='shortbread-section.html'">
+                      <img src="imgs/icons/shortbread-icon.svg" class="drop-icons" alt="shortbread icon">
+                      <p>Shortbread</p>
+                    </div>
+                    
+                    <div class="drop dropcolor" onclick="location.href='shortbread-section.html'">
+                      <img src="imgs/icons/fruit-icon.svg" class="drop-icons" alt="fruits and nuts icon">
+                      <p>Fruits & Nuts</p>
+                    </div>
+                    
+                    <div class="drop" onclick="location.href='shortbread-section.html'">
+                      <img src="imgs/icons/nobake-icon.svg" class="drop-icons" alt="no bake icon">
+                      <p>No Bake</p>
+                    </div>
+    
+                  </div>
+    
+    
+                </div>
+    
+    
+              </div>
+    
+            </div>
+    
+          </div>
+    
+        </div>
+  
+          
+      </div>
+      <div class="app-container">
+
+
+        <div class="app-main"> 
+          
+            <div class="back-button-box">
+            <a onclick="backtocat()" class="back-text"> <strong>&lt;</strong> <span>Build Your Own Cookie</span>
+            
+            </a>
+            
+            </div>
+<!--
+          <div class="back-button-box">
+            <a onclick="returntoCategories()"> <strong>&lt;</strong> Chocolate</a>
+          </div>
+-->
+          
+          <div class="main-recipe-image-box"> 
+              <img src="imgs/recipes/chocolate/default/head-img.png" alt="head-img">
+          </div>
+          
+          <div class="recipe-name-box">
+            <span class="title">Cookie Title</span>
+          </div>
+          
+          <div class="prepinfo-container">
+              <div class="prepinfo-box preptext">
+
+                <div class="prepsection">
+                  <img src="imgs/icons/timer-icon.svg" class="prepicon" alt="prep timer icon">
+                  <span class="prep-info-text">Prep: <span class="prep-time">_ Mins</span>
+                  </span>
+                </div>
+                <div class="prepsection">              
+                  <img src="imgs/icons/timer-icon.svg" class="prepicon" alt="prep timer icon">
+                  <span class="prep-info-text">Cook: <span class="cook-time">_ Mins</span></span>
+                </div>
+                <div class="prepsection">
+                  <img src="imgs/icons/yield-icon.svg" class="prepicon" alt="prep timer icon">
+                  <span class="prep-info-text">Yield: <span class="yield-time">_ Cookies</span></span>
+                  </div>
+
+          </div>
+            </div>
+          
+
+          <div class="ing-ins-box">
+            
+            <div class="ing-ins-title">
+              <img src="imgs/icons/circle-icon.svg" alt="circle" class="icon"/>
+              <span class="header1">Ingredients</span>
+            </div>
+            
+            <div class="ing-ins-section">
+                      <ul class="ingredients-info">
+                      </ul>
+            </div>
+            
+          </div>
+          
+          
+        <div class="side-img-box">
+          <img src="imgs/recipes/chocolate/default/side-img.png" alt="side-img">
+        </div>
+          
+                  
+        <div class="ing-ins-box">
+            <div class="ing-ins-title">
+              <img src="imgs/icons/circle-icon.svg" alt="circle" class="icon"/>
+              <span class="header1">Instructions</span>
+            </div>
+            
+            <div class="ing-ins-section">
+    
+              <ol class="instructions-info">
+              </ol>
+              
+            </div>
+        </div>
+          
+          
+        <div class="footer-img-box">
+          <img src="imgs/recipes/chocolate/default/footer-img.png" alt="footer-img">
+        </div>
+
+        
+        <div class="notes-box">
+          <span> </span>  
+        </div>
+          
+          
+          </div>
+        
+   
+  
+  </div>
+
+  <script src="js/generated-recipe.js"></script>
+  <script src="js/menu-testing.js"></script>
+  <script src="js/back-to-top-test.js"></script>
+</body>
+
+
+</html>

@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link href="css/skeleton.css" rel="stylesheet" type="text/css" />
+  <link href="css/index.css" rel="stylesheet" type="text/css" />
+  <title>Cooki</title>
+</head>
+
+<body onload="cotdRecipe()">
+
+  <div id="app">
+
+    <div id="topmenu">
+      <div class="cooki-header">
+
+
+        <div class="menu-button" onclick="openMenu()">
+          <img src="imgs/icons/hamburgerMenu.svg" id="hamburgerMenu" alt="hamburger menu">
+          <img src="imgs/icons/xMenu.svg" id="xMenu" alt="hamburger menu">
+        </div>
+
+        <div class="cooki-name" onclick="location.href='index.html'">
+          <h1>cooki.</h1>
+        </div>
+
+
+      </div>
+
+      <div id="pulloutMenu">
+
+        <!--      Menu item in a List: home, tutorial, byoc and recipes-->
+
+        <ul>
+          <div class="menulines">
+            <div id="home-container" onclick="location.href='index.html'">
+              <img src="imgs/icons/home-icon.svg" class="list-icons" alt="chocolate icon">
+              <li>Home</li>
+            </div>
+          </div>
+
+
+          <div class="menulines">
+            <div id="tutorial-container" onclick="location.href='tutorial.html'">
+              <img src="imgs/icons/tutorial-icon.svg" class="list-icons" alt="chocolate icon" id="tutorialicon">
+              <li>Tutorial</li>
+            </div>
+          </div>
+
+
+          <div class="menulines">
+            <div id="byoc-container" onclick="location.href='byoc.html'">
+              <img src="imgs/icons/byoc-icon.svg" class="list-icons" alt="chocolate icon">
+              <li>Build Your Own Cookie</li>
+            </div>
+          </div>
+
+
+          <div id="recipe-container" onclick="dropMenu()" class="dropbtn">
+            <img src="imgs/icons/recipes-icon.svg" class="list-icons" alt="chocolate icon">
+            <li class="dropdown">Recipes<span class="add">+</span>
+
+
+              <div class="dropdown-recipes">
+
+                <div class="drop dropcolor" onclick="location.href='viewall-section.html'">
+                  <img src="imgs/icons/viewall-icon.svg" class="drop-icons" alt="view all icon">
+                  <p>View All</p>
+                </div>
+
+
+                <div class="drop" onclick="location.href='vanilla-section.html'">
+                  <img src="imgs/icons/vanilla-bean-icon.svg" class="drop-icons" alt="Vanilla icon">
+                  <p>Vanilla</p>
+                </div>
+
+                <div class="drop dropcolor" onclick="location.href='chocolate-section.html'">
+                  <img src="imgs/icons/chocolate-icon.svg" class="drop-icons" alt="chocolate icon">
+                  <p>Chocolate</p>
+                </div>
+
+                <div class="drop" onclick="location.href='shortbread-section.html'">
+                  <img src="imgs/icons/shortbread-icon.svg" class="drop-icons" alt="shortbread icon">
+                  <p>Shortbread</p>
+                </div>
+
+              </div>
+
+
+            </li>
+
+
+          </div>
+
+        </ul>
+
+      </div>
+
+    </div>
+  </div>
+
+  <div class="app-container">
+
+
+    <div class="app-main" onload="cotdRecipe()">
+
+      <!--Start of Build Your Own Cookie-->
+      <div class="container byoc-container">
+
+
+      <div class="welcome-info">
+          <div class="welcome-title">
+            <h4>WELCOME TO COOKI.</h4>
+          </div>
+        </div>    
+          
+          
+        <!--Title with accent block-->
+        <div class="info">
+          <div class="byoc-feature-title">
+            <h4>BUILD YOUR OWN COOKIE</h4>
+          </div>
+          <div class="byoc-block"></div>
+        </div>
+
+
+        <div class="home-byoc">
+          <video autoplay muted loop>
+            <source src="imgs/animation/final_Cook.mp4" type="video/mp4">
+          </video>
+
+          <button type="button" id="byoc-but" onclick="location.href='byoc.html'">
+            &nbsp;&nbsp;&nbsp;Let's Bake!&nbsp;&nbsp;&nbsp;
+          </button>
+        </div>
+      </div>
+      <!--End of Build Your Own Cookie-->
+
+
+
+
+      <!--Start of Cooki of the day-->
+      <div class="container">
+
+        <!--Title with accent block-->
+        <div class="info">
+          <div class="cotd-feature-title">
+            <h4>COOKI OF THE DAY</h4>
+          </div>
+          <div class="cotd-block"></div>
+        </div>
+
+
+        <div class="recipe-display">
+          <img src="imgs/recipes/chocolate/default/preview-img.png" alt="image" />
+        </div>
+
+        <div class="recipe-info">
+          <h3 class="title"></h3>
+
+          <p> <span class="recipe"></span></p>
+            <span class="readmore read-more-right" onclick="location.href='chocolate-section.html'">READ MORE &#187</span>
+
+        </div>
+          
+          
+<!-- The original code for READ MORE
+
+<span class="readmore read-more-right" onclick="location.href='chocolate-section.html'">Read more</span></p>
+
+-->
+          
+      </div>
+      <!--End of Cooki of the day-->
+
+
+
+
+      <!--Start of More Recipes-->
+      <div class="container">
+
+        <!--Title with accent block-->
+        <div class="info">
+          <div class="var-feature-title">
+            <h4>MORE RECIPES</h4>
+          </div>
+            <div class="var-block"></div>
+            
+        </div>
+          
+          <!-- container for the recipe icons  -->
+           <div class="view-more-recipes">
+               
+                <img src="imgs/icons/vanilla-bean-icon.svg" alt="Vanilla Recipe" class="recipe-icons"/>
+               
+                <img src="imgs/icons/chocolate-icon.svg" alt="Chocolate Recipe" class="recipe-icons"/>
+               
+                <img src="imgs/icons/shortbread-icon.svg" alt="Shortbread Recipe" class="recipe-icons"/>
+               
+                <img src="imgs/icons/fruuit-nut-icon.svg" alt="Fruit and Nuts Recipe" class="recipe-icons"/>
+               
+                <img src="imgs/icons/nobake-icon.svg" alt="No Bake Recipe" class="recipe-icons"/>
+               
+            </div>
+          
+      </div>
+      <!--End of All Recipes-->
+
+    </div>
+  </div>
+
+  <script src="js/index.js"></script>
+  <script src="js/home.js"></script>
+</body>
+
+
+</html>

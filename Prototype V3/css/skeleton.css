@@ -1,0 +1,246 @@
+/* ---FONTS--- */
+ 
+@import url('https://fonts.googleapis.com/css?family=Lato|Quicksand|Montserrat');
+
+.headfont {
+    font-size: 45pt;
+  font-family: Quicksand;
+  font-weight: 700;
+  color: #333333;
+}
+
+
+.bodyfont {
+  
+}
+
+
+/* --------------- */
+
+/* ---LAYOUT--- */
+
+body {
+  margin: 0;
+  color: #333333;
+  -webkit-text-size-adjust: 100%
+}
+
+#app {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  height: auto;
+  overflow-x: hidden;
+}
+
+
+/* --------------- */
+
+/* ---APP CONTAINER(S)--- */
+
+.app-container {
+  /* height:2100px;; */
+  height:auto;
+  width: 100vw;
+  background-color: #F8F8F9;
+  display: flex;
+/*  margin-top: 150px;*/
+position: absolute;
+    top: 150px;
+z-index: 2;
+}
+
+.app-main {
+/*  background-color: #EDEDED;*/
+  height:auto;
+  width: 95%;
+  margin: 5%
+}
+
+
+
+
+/* --------------- */
+
+/*BURGER MENU*/
+
+/* Menu lines = the white separators*/
+
+.menulines {
+    padding-bottom:3em;
+    border-bottom:solid 3px white;
+    left:0px;
+}
+
+#home-container {
+    display:flex; 
+}
+
+#tutorial-container {
+    display:flex; 
+    padding-top:15px;
+}
+
+#tutorialicon{
+ width:10.5%
+}
+
+#byoc-container {
+    display:flex; 
+}
+
+#recipe-container {
+    display:flex; 
+}
+
+.list-icons {
+width:13%; 
+margin: 20px 0px 0px 40px ;
+}
+
+
+/*MENU ICON LEFT CORNER*/
+
+#xMenu {
+    opacity: 0;
+    transition:50ms;
+}
+
+#hamburgerMenu {
+    opacity: 1;
+    transition:200ms;
+}
+
+
+/*IN THE PULL OUT MENU: OPENING THE HAMBURGER MENU*/
+
+.add {
+    font-size:50pt;
+    margin-left:1em; 
+}
+
+/* The Menu*/
+
+#topmenu {
+width: 100%;
+height: 150px;
+display: flex;
+flex-direction: column;
+    
+}
+
+#pulloutMenu{
+/*    display: none;*/
+    width:100%;
+    height:100vh;
+    position:fixed;
+    top:150px;
+    background-color: #eae4e4;
+    left:-100%;
+    transition: 0.4s;
+    z-index: 3;
+}
+
+#pulloutMenu ul {
+margin-top:2em;
+padding-left:0;
+}
+
+/*links on menu: Color and size*/
+
+
+
+#pulloutMenu li {
+ font-family: Quicksand;
+ color:#7a6a68;
+ font-size:40pt;
+ transition:0.4s;
+ margin-top:1em;
+ list-style: none;
+ margin-left:1em;
+
+}
+
+
+.dropdown-recipes {
+  opacity:0;
+  position:absolute;
+/*  background-color: #f4eeed ;*/
+  width:100%;
+  left:0px;
+  display:flex;
+  flex-direction: column;
+  z-index: 1;
+  font-family: Quicksand;
+  font-size:40pt;
+  background-color: #eae4e4;
+  padding-bottom:1em;
+  margin-top:15px;
+  transition: 0.3s ease;
+}
+
+
+/*Each individual div in the recipe drop down and icons*/
+.drop {
+display:flex;
+
+padding:0;
+
+}
+
+.drop-icons {
+   width:10%;
+   margin-right:30px;
+   margin-left:200px;
+}
+
+.dropcolor{
+    background-color: #ede8e8;
+}
+
+
+/* ---COOKI HEADER STYLE--- */
+
+.cooki-header {
+  background-color: #786562;
+  width:100vw;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  position:fixed;
+  top: 0;  
+  z-index: 4;
+
+}
+
+.menu-button {
+  width: 15%;
+  height: 150px; 
+  position: relative; 
+}
+
+.menu-button img {
+  height: 30%;
+  width: auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.cooki-name {
+  width: 85%;
+  height: 150px;
+}
+
+.cooki-name h1 {
+  font-size: 45pt;
+  font-family: Montserrat;
+  color: white;
+  text-align: center;
+  padding-right: 18%;
+}
+/* --------------- */

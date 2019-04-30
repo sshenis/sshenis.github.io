@@ -1,0 +1,383 @@
+/* ---FONTS--- */  
+
+#choose-quantity-text { 
+  font-size: 55pt;
+  font-family: Quicksand;
+  font-weight: 700;
+  color: #333333;
+  text-align: center;
+  margin: 10px, 0;   
+    
+}
+
+.headfont {
+    margin-bottom:10px;
+}
+/*Blue Block under Header "Step 2"*/
+
+#block {
+    height:1%;
+    background-color:#BFE3DD;
+    margin-bottom:2em;
+    left:-100px;
+    position:relative;
+    top:0px;
+    width:350px;
+}
+
+/* DISPLAYING COOKIE SELECTIONS */
+
+#displayCookie {
+    top:0px;
+    position:relative;
+    margin-top:20px;
+    margin-left: -2%;
+}
+
+/*NUMBERS: X1 X2 X3*/
+
+#Numbers {
+    opacity:1;
+    transform:translateY(-10px);
+}
+
+#X1{
+    opacity:0;
+    transition-duration: 0.5s;
+}
+
+#X2{
+    opacity:0;
+    transition-duration: 0.5s;
+}
+
+#X3{
+    opacity:0;
+    transition-duration: 0.5s;
+}
+
+/* HIDE AND SHOW QUANTITY for 2 and 3*/
+
+#Quantity_2 {
+    opacity:0;
+    transition:0.5s;
+}
+
+#Quantity_1 {
+   opacity:1;
+   transition:0.5s;
+}
+
+#R_chocolate{
+    opacity:0;
+    animation: float-cookie 3s infinite;
+-webkit-animation: float-cookie 3s infinite;
+animation-delay: 199ms;
+transition: all 500ms ease;
+}
+
+#R_vanilla{
+    opacity:0;
+    animation: float-cookie 3s infinite;
+-webkit-animation: float-cookie 3s infinite;
+animation-delay: 199ms;
+transition: all 500ms ease;
+}
+
+#R_shortbread{
+    opacity:0;
+    animation: float-cookie 3s infinite;
+-webkit-animation: float-cookie 3s infinite;
+animation-delay: 199ms;
+transition: all 500ms ease;
+}
+
+#L_chocolate{
+    opacity:0;
+    animation: float-cookie 3s infinite;
+-webkit-animation: float-cookie 3s infinite;
+animation-delay: 199ms;
+transition: all 500ms ease;
+}
+
+#L_vanilla{
+    opacity:0;
+    animation: float-cookie 3s infinite;
+-webkit-animation: float-cookie 3s infinite;
+animation-delay: 199ms;
+transition: all 500ms ease;
+}
+
+#L_shortbread{
+    opacity:0;
+    animation: float-cookie 3s infinite;
+-webkit-animation: float-cookie 3s infinite;
+animation-delay: 199ms;
+transition: all 500ms ease;
+}
+
+/* toppings for quantity 2 & 3*/
+
+#L_shadow{
+    opacity:1;
+    animation: Lshadow 3s infinite;
+    transform-origin:center;   
+}
+
+#R_shadow {
+    opacity:1;
+     animation: Rshadow 3s infinite;
+    transform-origin:center; 
+}
+
+@-webkit-keyframes Lshadow {
+    0% { transform: scaleX(0.4); }
+    50% { transform: scaleX(1); }
+    100% { transform: scaleX(0.4); }
+}
+
+@keyframes Lshadow {
+    0% { transform: scaleX(0.4); }
+    50% { transform: scaleX(1); }
+    100% { transform: scaleX(0.4); }
+}
+
+@-webkit-keyframes Rshadow {
+    0% { transform: scaleX(0.4); }
+    50% { transform: scaleX(1); }
+    100% { transform: scaleX(0.4); }
+}
+
+@keyframes Rshadow {
+    0% { transform: scaleX(0.4); }
+    50% { transform: scaleX(1); }
+    100% { transform: scaleX(0.4); }
+}
+
+
+#R_chocolatechips{
+    opacity:0;
+    transition:0.3s;
+    animation: float-topping 3s infinite ;
+    animation-delay: 190ms;
+}
+
+#R_nuts{
+    opacity:0;
+    transition:0.3s;
+    animation: float-topping 3s infinite ;
+    animation-delay: 197ms;
+}
+
+#R_fruit{
+    opacity:0;
+     transition:0.3s;
+    animation:float-topping 3s infinite;
+    animation-delay: 195ms;
+}
+
+#L_chocolatechips{
+    opacity:0;
+    transition:0.3s;
+    animation: float-topping 3s infinite ;
+    animation-delay: 190ms;
+}
+
+#L_nuts{
+    opacity:0;
+    transition:0.3s;
+    animation: float-topping 3s infinite ;
+    animation-delay: 197ms;
+}
+
+#L_fruit{
+    opacity:0;
+     transition:0.3s;
+    animation:float-topping 3s infinite;
+    animation-delay: 195ms;
+}
+
+
+
+/* COOKIE ANIMATIONS/ FLOATING COOKIE IN DISPLAY */
+
+.float{
+   animation: float-cookie 3s infinite;
+-webkit-animation: float-cookie 3s infinite;
+animation-delay: 199ms;
+transition: all 500ms ease; 
+}
+
+#vanilla {
+opacity:0 ;
+}
+
+#chocolate {
+    opacity:0;
+}
+
+#shortbread {
+    opacity:0;
+}
+
+.floatshadow {
+    animation: shadow-size 3s infinite;
+    transform-origin: center;       
+}
+
+/* KEYFRAMES: floating cookie*/
+@-webkit-keyframes float-cookie {
+    0% { transform: translateY(0px); }
+    50% {transform: translateY(-30px);}
+    100% { transform: translateY(0px); }
+}
+
+@keyframes float-cookie {
+    0% { transform: translateY(0px); }
+    50% {transform: translateY(-30px);}
+    100% { transform: translateY(0px); }
+}
+
+/*//////////////////////*/
+
+/* KEYFRAMES: shadow move*/
+@-webkit-keyframes shadow-size {
+    0% { transform: scaleX(0.4); }
+    50% { transform: scaleX(1); }
+    100% { transform: scaleX(0.4); }
+}
+
+@keyframes shadow-size {
+    0% { transform: scaleX(0.4); }
+    50% { transform: scaleX(1); }
+    100% { transform: scaleX(0.4); }
+}
+
+/*////////////////////*/
+
+/*TOPPINGS ON QUANTITY 1*/
+
+#chocolatechips {
+    opacity:0;
+    transition:0.3s;
+    animation: float-topping 3s infinite ;
+    animation-delay: 190ms;
+}
+#nuts {
+    opacity:0;
+    transition:0.3s;
+    animation: float-topping 3s infinite ;
+    animation-delay: 197ms;
+}
+#fruit {
+    opacity:0;
+    transition:0.3s;
+    animation:float-topping 3s infinite;
+    animation-delay: 195ms;
+}
+
+/*TOPPING ANIMATION KEYFRAMES*/
+
+@-webkit-keyframes float-topping {
+    0% { transform: translateY(0); }
+    50% {transform: translateY(-30px);}
+    100% { transform: translateY(0px); }
+}
+
+@keyframes float-topping {
+    0% { transform: translateY(0); }
+    50% {transform: translateY(-30px);}
+    100% { transform: translateY(0px); }
+}
+
+
+/*/////////////////////*/
+
+/* FLAVOUR OPTIONS: VANILLA, CHOCOLATE, SHORTBREAD */
+
+#quantity-container {
+    display:flex;
+    height:300px;
+    margin-top:3em;
+    margin-bottom:3em;
+    flex-direction: row;
+    padding-bottom: 40px;
+}
+
+.flavours {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+/*    background-color: pink;*/
+    height:350px;
+    width: 33.33%;
+}
+
+.flavour-imgs {
+    width:300px;
+    margin-bottom: 20px;
+}
+
+.flavour-imgs:hover {
+cursor: pointer;
+}
+
+
+.flavours span {
+    font-size: 50px;
+    font-family: Lato;  
+}
+
+
+/* BUTTONS */
+/* Start of next, prev and page nav */
+
+.next-prev {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 5em;
+}
+
+.byoc-buttons {
+    font-family: Quicksand;
+    font-size: 30pt;
+    height: 100%;
+    padding: 1px,7px,2px;
+    height:100px;
+}
+
+#byoc-prev {
+    background-color: #B3E5D9;
+    color: white;
+    flex: 2;
+    border-radius: 15px;
+}
+
+#space-between-button {
+    flex:1;
+    margin: 0px 50px;
+    width: 100%;
+    height: auto;
+    flex-direction: row;
+}
+
+#byoc-next {
+    background-color: #4ec0ba;
+    color: white;
+    flex: 2.5;
+    border-radius: 15px;
+}
+
+#byoc-next:hover {
+    background-color: #86C4B2;
+    cursor: pointer;
+}
+
+#byoc-prev:hover {
+    background-color: #9BD1C3;
+    cursor: pointer;
+}
+

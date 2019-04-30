@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css?family=Lato|Quicksand');
+body {
+    -webkit-text-size-adjust: 100%;
+}
+.tutorial-controls, .page-nav {
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    bottom: 0;
+    left: 0;
+}
+
+.tutorial-container {
+    display: flex;
+}
+
+.tutorial-instructions p {
+    margin: -40px 0px 50px 0px;
+}
+
+.tutorial-header {
+    flex: 2;
+    font-family: Lato;
+    font-size: 55px;
+    width: 100%;
+    font-weight: 400;
+    margin-top: -80px;
+}
+
+.tutorial-block {
+    background-color: #BFE3DD;
+    width: 100%;
+    height: 1vh;
+    margin: 25px 0px;
+    flex: 1.3;
+} 
+
+.tutorial-video {
+    margin: 150px 0px 200px 0px;
+}
+
+.header {
+    font-family: Quicksand;
+    font-size: 2em;
+}
+
+.display {
+    height: 25%x;
+    margin: 30px 0px;
+}
+
+.display video {
+    width: 100%;
+    height: 100%;
+    border-radius: 100px;
+}
+
+.block {
+    background-color: #BFE3DD;
+    width: 100%;
+    height: 1vh;
+    margin: 50px 0px;
+}
+
+/* End of tutorial-display */
+
+.tutorial-content {
+    font-family: Lato;
+    font-size: 30pt;
+    text-align:justify;
+    margin: 30px 0px 0px;
+}
+
+/* Start of next, prev and page nav */
+
+.next-prev {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px 0px;
+    width: 100%;
+}
+
+.next-prev button {
+    font-family: Quicksand;
+    font-size: 45px;
+    height: 80px;
+}
+
+#start-prev {
+    background-color: #B6B6B6;
+    display: block;
+}
+
+.tut-prev {
+    display: none;
+    background-color: #aad1d0;
+    color: white;
+    flex: 2;
+    border-radius: 15px;
+}
+
+.page-nav {
+    flex:1.5;
+    margin: 0px 50px;
+    width: 100%;
+    height: auto;
+    flex-direction: row;
+}
+
+#page-circ1 {
+    background-color: grey;
+}
+
+/* #page-circ1, #page-circ2, #page-circ3, #page-circ4 {
+    opacity: 0;
+} */
+
+.circles {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #F8F8F9;
+    border-color: grey;
+    border-style: solid;
+    flex: 1;
+    margin: 0px 5px -50px 20px;
+}
+
+.tut-next {
+    background-color: #aad1d0;
+    color: white;
+    flex: 2;
+    border-radius: 15px;
+    display: block;
+}
+
+#lets-bake {
+    display: none;
+    background-color: #94807e;
+}
+/* End of next, prev and page nav */
+
+
+#what-is-cooki {
+    display: block;
+}
+
+#tutstep1, #tutstep2, #tutstep3 {
+    text-align: center;
+    width: 100%;
+    height: auto;
+    display: none;
+}
+
+.tutorial-content {
+    margin-bottom: 57px;
+}

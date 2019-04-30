@@ -1,0 +1,221 @@
+#recipes-result {
+    display: none;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Lato|Quicksand:400,500,700');
+
+
+/* --------------- START RECIPE NAME BOX --------------- */
+
+.recipe-name-box {
+    width: auto;
+    height: auto;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    text-align: center;
+}
+
+.rec-title {
+    font-size: 62px;
+    font-family: Quicksand;
+    font-weight: bold!important;
+    color: #333333;
+} 
+
+/* --------------- END RECIPE NAME BOX --------------- */
+
+
+
+/* --------------- START MAIN RECIPE IMAGE BOX --------------- */
+
+.main-recipe-image-box {
+    padding-top: 50px;
+    width: 100%;
+    height: auto;
+}
+
+.main-recipe-image-box img {
+    border-radius: 30px;
+    width: 100%;
+    height: auto;
+}
+
+/* --------------- END MAIN RECIPE IMAGE BOX --------------- */
+
+
+
+
+/* --------------- START PREPARATION INFO BOX --------------- */
+
+.prepinfo-container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 60px;
+
+}
+
+.prepinfo-box {
+    display: flex;
+    background-color: rgba(91,60,31,0.1);
+    height: auto;
+    width: 75%;
+    justify-content: center;
+    flex-direction: column;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+.prepicon {
+    height: 50px;
+    width: auto;
+    margin-top: 10px;
+}
+
+.preptext {
+    font-family: Quicksand;
+    font-size: 40px;
+    padding-top: 45px;
+}
+
+.prepsection {
+    padding-right: 20px;
+    padding-left: 50px;
+    padding-bottom: 20px;
+    text-align: left;
+    margin-left: 80px;
+}
+
+.prep-info-text {
+    padding-left: 40px;
+    font-weight: bold;
+    margin-top: -65px;
+    margin-left: 40px;
+}
+
+.prep-time, .cook-time, .yield-time {
+    font-weight: 400;
+
+}
+/* --------------- END PREPARATION RECIPE BOX --------------- */
+
+
+
+
+/* --------------- START INGREDIENTS + INSTRUCTIONS BOX --------------- */
+
+.icon {
+    height: 20px;
+    width: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+    padding-right: 20px;
+}
+
+.ing-ins-box {
+    margin-top: 2em;
+    width: 100%;
+    height: 500px;
+    font-family: Lato;
+}
+
+.ing-ins-box {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.ing-ins-title {
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.ing-ins-section {
+    height: auto;
+    font-size: 35px;
+    line-height: 60px;
+    padding: 100px 0px -30px;
+    font-family: Lato, sans-serif;
+}
+
+li {
+    padding-left: 20px;
+}
+
+
+ol li {
+    text-align: justify;
+    padding-bottom: 1em;
+}
+
+.header1 {
+    flex: 1;
+    font-size: 47px;
+}
+
+.ing-block {
+    flex: 2;
+    height: 1vh;
+    background-color: #BFE3DD;
+}
+
+/* --------------- END INGREDIENTS + INSTRUCTIONS BOX --------------- */
+
+
+
+/* --------------- START NOTE BOX --------------- */
+
+.notes-box {
+    background-color: rgba(91,60,31,0.1);
+    height: auto;
+    font-size: 35px;
+    padding: 40px 40px 40px 40px;
+    text-align: justify;
+    margin-top: 2em;
+    font-family: Lato;
+}
+
+/* --------------- END NOTE BOX --------------- */
+
+
+
+
+/* --------------- START FOOTER IMAGE BOX --------------- */
+
+.footer-img-box {
+    width: 100%;
+    height: auto;
+    margin-bottom: 70px;
+}
+
+.footer-img-box img {
+    border-radius: 30px;
+    width: 100%;
+    height: auto;
+}
+
+/* --------------- END FOOTER IMAGE BOX --------------- */
+
+
+
+/* --------------- START SIDE IMAGE BOX --------------- */
+
+.side-img-box {
+    width: 100%;
+    height: auto;
+    padding: 50px 0px 70px;
+}
+
+.side-img-box img {
+    border-radius: 30px;
+    width: 100%;
+    height: auto;
+}
+
+/* --------------- END SIDE IMAGE BOX --------------- */
+
+
+
