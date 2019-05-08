@@ -1,0 +1,95 @@
+
+@media only screen and (max-width: 800px) {
+
+
+  #sidebar {
+    margin-top: 70px;
+  }
+
+  .sidebar-image {
+    height: 200px !important;
+  }
+
+  .sidebar-heading {
+    font-size: 8.5px;
+  }
+
+  .sidebar-text {
+    font-size: 11px;
+  }
+
+  .sidebar-nav a {
+    font-size: 11px;
+  }
+
+  /* Home */
+
+  #column-two {
+    margin-left: 20px;
+  }
+
+  #home-page {
+    width: 50%;
+  }
+
+  #home-page>h1 {
+    font-size: 70px;
+  }
+
+  .home-subtitle {
+    font-size: 22px;
+  }
+
+  .home-icons {
+    width: 200px;
+    margin-left: -40px;
+  }
+
+  /* About */
+  body #about-page>h1 {
+    font-size: 60px;
+    line-height: 45px;
+  }
+
+  .about-skills {
+    width: 200px;
+  }
+
+  /* Project */
+  body .proj-ba {
+    display: none;
+  }
+}
+
+
+@media only screen and (max-width: 1100px) {
+  #sidebar {
+    padding: 100px 70px;
+    margin-top: 50px;
+  }
+
+  #column-one {
+    padding: 0;
+  }
+
+  .sidebar-image {
+    height: 250px;
+  }
+
+  /* About */
+
+  #about-page {
+    width: 50vw;
+  }
+
+  #about-page>h1 {
+    font-size: 70px;
+    line-height: 50px;
+  }
+
+  /* project */
+  .proj-ba {
+    width: 200px;
+    height: 300px;
+  }
+}

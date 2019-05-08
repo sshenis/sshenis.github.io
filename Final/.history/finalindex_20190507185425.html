@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="css/index.css" rel="stylesheet" type="text/css" />
+  <link href="css/project.css" rel="stylesheet" type="text/css" />
+  <link href="css/media.css" rel="stylesheet" type="text/css" />
+  <script src="https://www.gstatic.com/firebasejs/5.9.0/firebase.js"></script>
+  <title>Shenis Macabenta</title>
+</head>
+
+<body>
+
+  <div id="content">
+
+    <div id="column-one">
+      <!--Sidebar-->
+      <div id="sidebar">
+        <!--Sidebar Image-->
+        <div class="sidebar-image">
+          <img class="sidebar-image" src="img/extra/display.svg" />
+        </div>
+        <!--Sidebar Texts-->
+        <div onclick="goHome()" class="sidebar-heading">
+          <h1 class="home-button">shenis macabenta</h1>
+        </div>
+        <div class="sidebar-text">
+          <p>Aspiring UX designer and web developer.</p>
+        </div>
+        <!--Sidebar links-->
+        <div class="sidebar-whole-nav">
+          <div class="sidebar-nav">
+            <a class="sidebar-links" onclick="goAbout()">about</a>
+          </div>
+          <div class="sidebar-nav">
+            <a class="sidebar-links" onclick="goProjects()">projects</a>
+          </div>
+          <div class="sidebar-nav">
+            <a class="sidebar-links" onclick="goContact()">contact me</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="column-two">
+
+      <!--Home-->
+      <div id="home-page">
+        <h1>portfolio.</h1>
+        <div class="home-subtitle">
+          <h4>learning and creating as i go</h4>
+        </div>
+
+        <div class="home-icons">
+          <img class="connect" src="img/icons/linkedin.svg" alt="LinkedIn" />
+          <img class="connect" src="img/icons/instagram.svg" alt="Instagram" />
+          <img class="connect" src="img/icons/facebook.svg" alt="Facebook" />
+          <img class="connect" src="img/icons/gmail.svg" alt="Google Mail" />
+        </div>
+
+        <img class="bottom-art" src="img/line art/lineart.svg" alt="Filler art" />
+
+      </div>
+
+      <!--About-->
+      <div id="about-page">
+        <h1>shenis macabenta</h1>
+        <p class="about-text">
+          Finishing my first year of Digital Design and Development diploma program at BCIT. <br><br>
+          There, I learn to design, develop and create interactive dynamic, immersive social and online
+          applications across various digital media platforms.
+          <br><br>I also learn to work within a team to design and develop web and mobile applications,
+          educational products, video, and audio assets for interactive media and business applications.
+        </p>
+
+        <div class="about-skills">
+          <img class="skills" src="img/line art/skills.svg" alt="Skills" />
+        </div>
+        <img class="bottom-art" src="img/line art/lineart2.svg" alt="Filler art" />
+      </div>
+
+      <!--Projects-->
+      <div id="project-page">
+
+        <!--scroll to top-->
+        <div id="uphere"></div>
+
+        <!--animation-->
+        <div class="post">
+          <div class="post-info">
+            <h1 class="post-heading">animations </h1>
+            <div class="line"></div>
+          </div>
+
+          <div class="post-display">
+            <video autoplay muted loop>
+              <source src="img/animations/final_Cook.mp4" type="video/mp4">
+            </video>
+          </div>
+
+          <div class="post-desc">
+            <p class="post-text">
+              Illustrations created on Illustrator and animated on After Effects.
+            </p>
+          </div>
+        </div>
+
+        <!--typography-->
+        <div class="post">
+          <div class="post-info">
+            <h1 class="post-heading vector-heading">typography </h1>
+            <div class="line"></div>
+          </div>
+
+          <div class="post-display">
+            <img src="img/typography/typo.svg" alt="pinkbuilding" />
+          </div>
+
+          <div class="post-desc">
+            <p class="post-text">
+              Typography graphics made using illustrator.
+            </p>
+          </div>
+        </div>
+
+        <!--cooki-->
+        <div class="post">
+          <div class="post-info">
+            <h1 class="post-heading vector-heading">cooki </h1>
+            <div class="line"></div>
+          </div>
+
+          <div class="post-display">
+            <img src="img/cooki/display.svg" alt="Cooki" />
+          </div>
+
+          <div class="post-desc">
+            <p class="post-text">
+              End of term project. Creating a Cooki App with Irvin Alcira and Naomi Okada.
+            </p>
+          </div>
+        </div>
+
+
+        <!--vector-->
+        <div class="post">
+          <div class="post-info">
+            <h1 class="post-heading vector-heading">vector graphics </h1>
+            <div class="line"></div>
+          </div>
+
+          <div class="post-display">
+            <img src="img/vector/pinkbuilding.svg" alt="pinkbuilding" />
+          </div>
+
+          <div class="post-desc">
+            <p class="post-text">
+              A series of vector graphics made using illustrator.
+            </p>
+          </div>
+        </div>
+
+        <!--wordpress-->
+        <div class="post">
+          <div class="post-info">
+            <h1 class="post-heading">wordpress blogs </h1>
+            <div class="line"></div>
+          </div>
+
+          <div class="post-display">
+            <img class="post-display" src="img/WP/wp1.png" alt="La La Land" />
+          </div>
+
+          <div class="post-desc">
+            <p class="post-text">
+              Websites and blogs made on Wordpress.
+            </p>
+          </div>
+        </div>
+
+
+
+        <!--personas-->
+        <div class="post">
+          <div class="post-info">
+            <h1 class="post-heading vector-heading">personas </h1>
+            <div class="line persona-line"></div>
+          </div>
+
+          <div class="post-display">
+            <img class="post-display" src="img/persona/brie.png" alt="pinkbuilding" />
+          </div>
+
+          <div class="post-desc">
+            <p class="post-text">
+              Personas made for projects outlining user goals, needs and frustrations.
+            </p>
+          </div>
+        </div>
+
+
+        <img class="bottom-art" src="img/line art/lineart4.svg" alt="Filler art" />
+      </div>
+
+      <!--Contact-->
+      <div id="contact-page">
+        <h1>contact</h1>
+
+        <form action="#" method="POST">
+          <input type="text" id="contact-name" placeholder="Name"><br>
+          <input type="email" id="contact-email" placeholder="Email"> <br>
+          <input type="number" id="contact-age" min="0" max="100" placeholder="Age">
+          <input type="tel" name="phone" id="contact-phone" placeholder="Your Phone Number (604-999-9999)"
+            pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"><br>
+          <textarea id="contact-text" placeholder="Comments or concerns"></textarea> <br>
+        </form>
+
+        <button type="button" id="contact-but" onclick="lastMessage()">Reveal Last Message</button><br>
+        <button type="button" id="contact-all-but" onclick="addData()">Reveal All Message</button><br>
+        <button type="button" id="contact-clear-but" onclick="clearMessage()">clear</button>
+        <div id="contact-reveal"></div>
+        <img class="bottom-art" src="img/line art/lineart3.svg" alt="Filler art" /><br>
+      </div>
+    </div>
+  </div>
+
+
+
+
+  <script src="js/final.js"></script>
+  <script src="js/contact.js"></script>
+  <!-- <script src="https://www.gstatic.com/firebasejs/5.10.1/firebase.js"></script> -->
+
+</body>
+
+</html>

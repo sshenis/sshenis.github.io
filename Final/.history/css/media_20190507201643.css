@@ -1,0 +1,229 @@
+@media only screen and (max-width: 600px) {
+
+  /* sidebar */
+  #column-one {
+    padding: 0;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+  }
+
+  .sidebar-image,
+  .sidebar-text {
+    display: none;
+  }
+
+  #sidebar {
+    height: 80px;
+    padding: 0 10px !important;
+    position: fixed;
+    margin-top: 0px !important;
+  }
+
+  #sidebar,
+  .sidebar-whole-nav {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+  }
+
+  .sidebar-heading {
+    flex: 1;
+    font-size: 11px !important;
+  }
+
+  .sidebar-whole-nav {
+    flex: 1.5;
+    margin-top: 20px;
+  }
+
+  .sidebar-nav a {
+    font-size: 16px !important;
+    padding: 0px 15px !important;
+  }
+
+  /* Home */
+
+  .bottom-art {
+    display: none;
+  }
+
+  /* #column-two {
+    margin: 0px 0px;
+    padding: 50px;
+    width: 80% !important;
+    overflow-x: hidden;
+    margin-left: 0% !important;
+  } */
+
+  #home-page {
+    width: 100% !important;
+  }
+
+  #home-page>h1 {
+    font-size: 80px !important;
+  }
+
+  .home-subtitle {
+    font-size: 30px !important;
+  }
+
+
+  .home-icons {
+    width: 250px !important;
+    margin-left: -50px !important;
+  }
+
+  /* About */
+
+  #about-page {
+    width: 75vw!important;
+    position: fixed;
+  }
+
+  #about-page>h1 {
+    font-size: 70px!important;
+    line-height: 50px!important;
+  }
+
+  .about-skills {
+    margin-top: 40px;
+    margin-left: 0px;
+  }
+
+  /* Project */
+
+  #project-page {
+    width: 100% !important;
+    margin-left: -10px !important;
+  }
+
+  /* Inside project */
+
+  #inside-project {
+    width: 100%;
+    margin-top: 5vh;
+    margin-left: -150px;
+    z-index: -25;
+  }
+  
+  .inside-post {
+    margin-top: -20px;
+    height: 100vh;
+  }
+
+
+  /* Scroll */
+  .scrolltoTop,
+  #top {
+    right: 0;
+    margin-top: -410px;
+    position: fixed;
+    bottom: 0;
+    opacity: 1;
+    z-index: -11;
+  }
+
+  /* Contact */
+  #contact-page {
+    margin-left: 25px;
+    height:auto;
+  }
+
+}
+
+@media only screen and (max-width: 800px) {
+
+
+  #sidebar {
+    margin-top: 70px;
+  }
+
+  .sidebar-image {
+    height: 200px !important;
+  }
+
+  .sidebar-heading {
+    font-size: 8.5px;
+  }
+
+  .sidebar-text {
+    font-size: 11px;
+  }
+
+  .sidebar-nav a {
+    font-size: 11px;
+  }
+
+  /* Home */
+
+  #column-two {
+    margin-left: 20px;
+  }
+
+  #home-page {
+    width: 50%;
+  }
+
+  #home-page>h1 {
+    font-size: 70px;
+  }
+
+  .home-subtitle {
+    font-size: 22px;
+  }
+
+  .home-icons {
+    width: 200px;
+    margin-left: -40px;
+  }
+
+  /* About */
+  body #about-page>h1 {
+    font-size: 60px;
+    line-height: 45px;
+  }
+
+  .about-skills {
+    width: 200px;
+  }
+
+  /* Project */
+  body .proj-ba {
+    display: none;
+  }
+}
+
+
+@media only screen and (max-width: 1100px) {
+  #sidebar {
+    padding: 100px 70px;
+    margin-top: 50px;
+  }
+
+  #column-one {
+    padding: 0;
+  }
+
+  .sidebar-image {
+    height: 250px;
+  }
+
+  /* About */
+
+  #about-page {
+    width: 50vw;
+  }
+
+  #about-page>h1 {
+    font-size: 70px;
+    line-height: 50px;
+  }
+
+  /* project */
+  .proj-ba {
+    width: 200px;
+    height: 300px;
+  }
+}

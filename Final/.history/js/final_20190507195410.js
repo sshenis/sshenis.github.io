@@ -1,0 +1,166 @@
+/*
+home = -5
+about = -10
+projects = -15
+contact = -20
+iproject = -25
+*/
+
+var home = document.querySelector("#home-page"),
+  about = document.querySelector("#about-page"),
+  projects = document.querySelector("#project-page"),
+  contact = document.querySelector("#contact-page"),
+  iproject = document.querySelector("#inside-post"),
+  inside = document.querySelectorAll(".inside-post");
+
+function goHome() {
+  home.style.opacity = 1;
+  home.style.zIndex = 0;
+
+  about.style.opacity = 0;
+  about.style.zIndex = "-10";
+
+  projects.style.opacity = 0;
+  projects.style.zIndex = "-15";
+  delay();
+
+  contact.style.opacity = 0;
+  contact.style.zIndex = "-20";
+  contact.style.position = "fixed";
+
+  iproject.style.position = "fixed";
+  iproject.style.opacity = "0";
+  iproject.style.zIndex = "-25";
+
+  inside[0].style.position = "fixed";
+  inside[1].style.position = "fixed";
+  inside[2].style.position = "fixed";
+  inside[3].style.position = "fixed";
+  inside[4].style.position = "fixed";
+  inside[5].style.position = "fixed";
+}
+
+function goProjects() {
+  home.style.opacity = 0;
+  home.style.zIndex = "-5";
+
+  about.style.opacity = 0;
+  about.style.zIndex = "-10";
+
+  projects.style.opacity = 1;
+  projects.style.zIndex = 0;
+  projects.style.position = "relative";
+
+  contact.style.opacity = 0;
+  contact.style.zIndex = "-20";
+  contact.style.position = "fixed";
+
+  iproject.style.position = "fixed";
+  iproject.style.zIndex = "-25";
+
+  inside[0].style.position = "fixed";
+  inside[1].style.position = "fixed";
+  inside[2].style.position = "fixed";
+  inside[3].style.position = "fixed";
+  inside[4].style.position = "fixed";
+  inside[5].style.position = "fixed";
+
+  inside[0].style.opacity = 0;
+  inside[1].style.opacity = 0;
+  inside[2].style.opacity = 0;
+  inside[3].style.opacity = 0;
+  inside[4].style.opacity = 0;
+  inside[5].style.opacity = 0;
+
+}
+
+function goAbout() {
+  home.style.opacity = 0;
+  home.style.zIndex = "-5";
+
+  about.style.opacity = 1;
+  about.style.zIndex = 0;
+
+  projects.style.opacity = 0;
+  projects.style.zIndex = "-15";
+  delay();
+
+  contact.style.opacity = 0;
+  contact.style.zIndex = "-20";
+  contact.style.position = "fixed";
+
+  inside[0].style.position = "fixed";
+  inside[1].style.position = "fixed";
+  inside[2].style.position = "fixed";
+  inside[3].style.position = "fixed";
+  inside[4].style.position = "fixed";
+  inside[5].style.position = "fixed";
+
+  inside[0].style.opacity = 0;
+  inside[1].style.opacity = 0;
+  inside[2].style.opacity = 0;
+  inside[3].style.opacity = 0;
+  inside[4].style.opacity = 0;
+  inside[5].style.opacity = 0;
+}
+
+function goContact() {
+  home.style.opacity = 0;
+  home.style.zIndex = "-5";
+
+  about.style.opacity = 0;
+  about.style.zIndex = "-10";
+
+  projects.style.opacity = 0;
+  projects.style.zIndex = "-15";
+  delay();
+
+  contact.style.opacity = 1;
+  contact.style.zIndex = 0;
+  contact.style.position = "relative";
+
+  inside[0].style.position = "fixed";
+  inside[1].style.position = "fixed";
+  inside[2].style.position = "fixed";
+  inside[3].style.position = "fixed";
+  inside[4].style.position = "fixed";
+  inside[5].style.position = "fixed";
+
+  inside[0].style.opacity = 0;
+  inside[1].style.opacity = 0;
+  inside[2].style.opacity = 0;
+  inside[3].style.opacity = 0;
+  inside[4].style.opacity = 0;
+  inside[5].style.opacity = 0;
+}
+
+function delay() {
+  setTimeout(function () {
+    projects.style.position = "fixed";
+  }, 500);
+}
+
+
+window.onscroll = function () {
+  scrollFunction()
+};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 0 || document.documentElement.scrollTop > 1000) {
+    document.getElementById("top").style.opacity = 1;
+  } else {
+    document.getElementById("top").style.opacity = 0;
+  }
+}
+
+function goup() {
+
+
+  document.getElementById("top").style.cursor = "  cursor: url(http://cur.cursors-4u.net/others/oth-6/oth656.cur), auto !important";
+  setTimeout(function () {
+    document.querySelector("#uphere").scrollIntoView({
+      behavior: "smooth"
+    })
+  }, 500);
+
+}

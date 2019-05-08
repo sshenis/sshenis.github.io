@@ -1,0 +1,41 @@
+#inside-project {
+  width: 60%;
+  position: absolute;
+  margin-top: 5vh;
+  z-index: -5;
+}
+
+.inside-post {
+  opacity: 0;
+  margin-bottom: 50px;
+  position: absolute;
+  width: 100%;
+}
+
+/* title */
+.inside-post-info {
+  display: flex;
+}
+
+.inside-post-heading {
+  font: 20px Muli;
+  flex: 1;
+  color: #575757;
+}
+
+.inside-line {
+  height: 1px;
+  flex: 1.5;
+  margin-top: 25px;
+  background-color: #bebebe;
+}
+
+.animation-post-display {
+  width: 100%;
+  height: auto;
+  margin-bottom: 50px;
+}
+
+.image-post-display img {
+  width: 100%;
+}

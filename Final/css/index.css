@@ -1,0 +1,304 @@
+@import url('https://fonts.googleapis.com/css?family=Muli');
+
+body,
+html {
+  cursor: url(http://cur.cursors-4u.net/cursors/cur-9/cur817.cur), auto !important;
+  scroll-behavior: smooth;
+  font-family: Muli;
+}
+
+#content {
+  display: flex;
+}
+
+#column-one {
+  flex:1;
+  padding: 100px;
+  position: fixed;
+  z-index: 200;
+}
+
+#column-two {
+  flex: 3;
+  position: absolute;
+  padding-left: 35vw;
+}
+
+/*--------------SIDEBAR--------------*/
+#sidebar {
+  padding: 0px 100px;
+}
+
+.sidebar-image {
+  width: 150px;
+  height: 300px;
+}
+
+.sidebar-heading {
+  font: 9px Muli;
+  width: 200px;
+  color: #575757;
+}
+
+.sidebar-text {
+  color: #8f8e8e;
+  font: 12px Muli;
+  width: 175px;
+  margin-top: -5px;
+}
+
+/* links */
+.sidebar-whole-nav {
+  display: flex;
+  flex-direction: column;
+}
+
+.sidebar-links {
+  flex: 2;
+  font: 12px Muli;
+  color: #8f8e8e;
+  text-decoration: none;
+  cursor: url(http://cur.cursors-4u.net/others/oth-6/oth656.cur), auto !important;
+}
+
+.sidebar-links:hover {
+  color: #f12424;
+  transition: 0.5s;
+}
+
+.home-button {
+  cursor: url(http://cur.cursors-4u.net/others/oth-6/oth656.cur), auto !important;
+}
+
+.home-button:hover {
+  color: #f12424;
+  transition: 0.5s;
+}
+
+
+/*--------------HOME--------------*/
+#home-page {
+  opacity: 1;
+  transition: 0.5s;
+  width: 100%;
+  height: 80vh;
+  padding-top: 100px;
+  z-index: -5;
+  position: fixed;
+  background-color: white;
+}
+
+#home-page>h1 {
+  font-size: 80px;
+  color: #b3b3b3;
+}
+
+
+.home-subtitle {
+  flex: 3;
+  font-size: 30px;
+  color: #f84949;
+  margin-top: -20px;
+}
+
+.home-icons {
+  display: flex;
+  width: 250px;
+  margin-top: -20px;
+  cursor: url(http://cur.cursors-4u.net/others/oth-6/oth656.cur), auto !important;
+}
+
+.connect {
+  width: 20%;
+  flex: 1;
+  margin-left: 50px;
+  cursor: url(http://cur.cursors-4u.net/others/oth-6/oth656.cur), auto !important;
+}
+
+.bottom-art {
+  position: fixed;
+  width:20%;
+  min-width: 150px;
+  height: auto;
+  bottom: 0;
+  right: 0;
+}
+
+/*--------------ABOUT--------------*/
+#about-page {
+  width: 35vw;
+  transition: 0.5s;
+  height: auto;
+  margin-top: 5vh;
+  position: absolute;
+  opacity: 0;
+  z-index: -10;
+  overflow: hidden;
+}
+
+#about-page>h1 {
+  font-size: 80px;
+  color: #b3b3b3;
+  line-height: 60px;
+}
+
+.about-text {
+  font: 12px Muli;
+  color: #8f8e8e;
+}
+
+.about-skills {
+  width: 90%;
+  min-width: 300px;
+  margin: 70px 0px 0px;
+}
+
+/*--------------PROJECTS--------------*/
+
+#project-page {
+  opacity: 0;
+  height: auto;
+  transition: 0.5s;
+  width: 500px;
+  position: fixed;
+  z-index: -15;
+  margin-top: 5vh;
+}
+
+.post {
+  margin-bottom: 50px;
+  color: #f12424;
+  cursor: url(http://cur.cursors-4u.net/others/oth-6/oth656.cur), auto !important;
+}
+
+/* title */
+.post-info {
+  display: flex;
+}
+
+.post-heading {
+  font: 20px Muli;
+  flex: 1;
+  color: #575757;
+}
+
+.line {
+  height: 1px;
+  flex: 1.5;
+  margin-top: 25px;
+  background-color: #bebebe;
+}
+
+.persona-line {
+  height: 2px;
+}
+
+.post-display:hover {
+  opacity: 0.9;
+  transition: 0.5s ease-in-out;
+}
+
+.post-text {
+  font: 14px Muli;
+  color: #8f8e8e;
+}
+
+.post-display {
+  width: 100%;
+  height: auto;
+}
+
+video {
+  width: 100%;
+}
+
+.proj-ba {
+  width: 250px;
+  height: 400px;
+  min-width: 150px;
+  min-height: 200px;
+}
+
+
+/*--------------CONTACT--------------*/
+#contact-page {
+  opacity: 0;
+  height: 0;
+  transition: 0.5s;
+  width: 100%;
+  z-index: -20;
+  margin-top: 10vh;
+  position: fixed;
+}
+
+#contact-page>h1 {
+  font-size: 80px;
+  color: #b3b3b3;
+  line-height: 60px;
+}
+
+#contact-page>button {
+  width: 250px;
+  margin-left: 25px;
+  margin-bottom: 10px;
+}
+
+input {
+  cursor: default;
+  width: 300px;
+  margin-bottom: 20px;
+  height: 30px;
+}
+
+textarea {
+  width: 300px;
+  height: 200px;
+}
+
+#contact-age {
+  width: 50px;
+  padding: 0px 10px;
+}
+
+#contact-but {
+  border-radius: 5px;
+  font: 14px Muli;
+  margin: 30px 0px 0px 0px;
+}
+
+#contact-all-but {
+  border-radius: 5px;
+  font: 14px Muli;
+}
+
+#contact-clear-but {
+  opacity: 0;
+  border-radius: 5px;
+  font: 14px Muli;
+  margin: 10px 0px;
+}
+
+#contact-reveal {
+  margin: 30px 0px;
+}
+
+#contact-phone {
+  width: 222px;
+}
+
+
+/*--------------SCROLL--------------*/
+.scrolltoTop {
+  position: fixed;
+  bottom:0;
+  margin-left: 550px;
+  opacity: 1;
+  cursor: url(http://cur.cursors-4u.net/others/oth-6/oth656.cur), auto !important
+}
+
+#top {
+  width: 75px;
+  opacity: 0;
+  height: auto;
+  cursor: url(http://cur.cursors-4u.net/others/oth-6/oth656.cur), auto !important
+}

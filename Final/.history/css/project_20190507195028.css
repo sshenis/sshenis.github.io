@@ -1,0 +1,45 @@
+#inside-project {
+  width: 450px;
+  position: fixed;
+  margin-top: 5vh;
+  z-index: -25;
+}
+
+.inside-post {
+  opacity: 0;
+  margin-bottom: 50px;
+  position: fixed;
+}
+
+/* title */
+.inside-post-info {
+  display: flex;
+}
+
+.inside-post-heading {
+  font: 20px Muli;
+  flex: 1;
+  color: #575757;
+}
+
+.inside-line {
+  height: 1px;
+  flex: 1.5;
+  margin-top: 25px;
+  background-color: #bebebe;
+}
+
+.animation-post-display {
+  width: 100%;
+  height: auto;
+  margin-bottom: 50px;
+}
+
+.image-post-display img {
+  width: 100%;
+}
+
+.persona-continue {
+  margin-top: -10px;
+  /* margin-bottom: 30px */
+}
